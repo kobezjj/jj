@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("b").after("<i>建军最棒！</i>");
+  });
+
+  $("#btn2").click(function(){
+    $("i").remove();
+  });
+});
+</script>
+</head>
+
+<body>
+<p>插入请点击添加按钮，删除请点击删除按钮。</p>
+<img src=https://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1207/25/c0/12543496_1343216212187_800x800.jpg>
+<br>
+<b>建军最棒！</b>
+<br>
+<button id="btn1">插入</button>
+<button id="btn2">删除</button>
+
+</body>
+</html>
